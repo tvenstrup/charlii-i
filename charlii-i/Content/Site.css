@@ -1,13 +1,20 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
+    background-color: black;
+}
+
+.container {
+    padding: 0;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 100%;
+    max-height: 100%;
 }
+
+
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -21,4 +28,37 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+footer {
+    background-color: grey;
+}
+
+.navbar-inverse {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.carousel .item {
+    
+}
+
+.carousel .item img {
+  /*min-height: 100%;
+  min-width: 1024px;
+	
+  width: 100%;
+  height: auto;
+	
+  position: fixed;
+  top: 0;
+  left: 0;*/
+}
+
+#photo-stream {
+    
+}
+
+.carousel-indicators {
+    top: 60%;
 }
