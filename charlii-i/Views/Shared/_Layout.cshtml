@@ -8,49 +8,51 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
         <div class="navbar-header">
             @*<a href="@Url.Action("Index", "Home", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Hem">
-                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-            </a>
-            <a href="@Url.Action("Index", "About", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Charlii-i">
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-            </a>
-            <a href="@Url.Action("Index", "Music", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Musik">
-                <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
-            </a>
-            <a href="@Url.Action("Index", "Events", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Events">
-                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-            </a>
-            <a href="@Url.Action("Index", "Contact", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Kontakt">
-                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-            </a>*@
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </a>
+                <a href="@Url.Action("Index", "About", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Charlii-i">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                </a>
+                <a href="@Url.Action("Index", "Music", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Musik">
+                    <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+                </a>
+                <a href="@Url.Action("Index", "Events", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Events">
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                </a>
+                <a href="@Url.Action("Index", "Contact", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Kontakt">
+                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                </a>*@
 
             @*<a href="@Url.Action("Index", "Home", new {area = ""})" class="navbar-brand">
-                <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Hem
-            </a>
-            <a href="@Url.Action("Index", "About", new {area = ""})" class="navbar-brand">
-                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Charlii-i
-            </a>
-            <a href="@Url.Action("Index", "Music", new {area = ""})" class="navbar-brand">
-                <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Musik
-            </a>
-            <a href="@Url.Action("Index", "Events", new {area = ""})" class="navbar-brand">
-                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Events
-            </a>
-            <a href="@Url.Action("Index", "Contact", new {area = ""})" class="navbar-brand">
-                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Kontakt
-            </a>*@
-                
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Hem
+                </a>
+                <a href="@Url.Action("Index", "About", new {area = ""})" class="navbar-brand">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Charlii-i
+                </a>
+                <a href="@Url.Action("Index", "Music", new {area = ""})" class="navbar-brand">
+                    <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Musik
+                </a>
+                <a href="@Url.Action("Index", "Events", new {area = ""})" class="navbar-brand">
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Events
+                </a>
+                <a href="@Url.Action("Index", "Contact", new {area = ""})" class="navbar-brand">
+                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Kontakt
+                </a>*@
+
             @Html.ActionLink("Hem", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            @Html.ActionLink("Charlii-i", "Index", "About", new {area = ""}, new {@class = "navbar-brand"})
-            @Html.ActionLink("Musik", "Index", "Music", new {area = ""}, new {@class = "navbar-brand"})
-            @Html.ActionLink("Events", "Index", "Events", new {area = ""}, new {@class = "navbar-brand"})
-            @Html.ActionLink("Kontakt", "Index", "Contact", new {area = ""}, new {@class = "navbar-brand"})
+            @Html.ActionLink("Charlii-i", "Index", "About", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Musik", "Index", "Music", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Events", "Index", "Events", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Kontakt", "Index", "Contact", new { area = "" }, new { @class = "navbar-brand" })
 
         </div>
     </div>
-    <div class="body-content">
+</div>
+    <div class="container body-content">
         @RenderBody()
         
     </div>

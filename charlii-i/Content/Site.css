@@ -35,8 +35,12 @@ footer {
 }
 
 .navbar-inverse {
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+    /*opacity: 0.4;
+    filter: alpha(opacity=40);*/
+}
+
+.carousel-indicators {
+    top: 60%;
 }
 
 .carousel .item {
@@ -59,6 +63,14 @@ footer {
     
 }
 
-.carousel-indicators {
-    top: 60%;
+#news {
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    width: 300px;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    background-color: #555555;
+    color: white;
+    
 }
