@@ -6,13 +6,15 @@
 
 .container {
     padding: 0;
-    /*margin: 0;*/
+    margin: 0;
+    max-width: 100%;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     height: 100%;
     max-height: 100%;
+    /*border: 1px solid red;*/
 }
 
 
@@ -29,6 +31,10 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.navbar{
+    padding-left: 30px;
 }
 
 .navbar-brand {
@@ -60,6 +66,10 @@ textarea {
     color: #000000;
 }
 
+.navbar-inverse .navbar-nav > .active > .grey, .navbar-inverse .navbar-nav > .active > .grey:hover, .navbar-inverse .navbar-nav > .active > .grey:focus {
+    color: #7f8c8d;
+}
+
 .navbar-inverse .navbar-nav > .active > .white, .navbar-inverse .navbar-nav > .active > .white:hover, .navbar-inverse .navbar-nav > .active > .white:focus {
     color: #ffffff;
 }
@@ -74,6 +84,10 @@ textarea {
 
 .navbar-inverse .navbar-brand.black:hover {
     color: black;
+}
+
+.navbar-inverse .navbar-brand.grey:hover {
+    color: #7f8c8d;
 }
 
 .navbar-inverse .navbar-brand.blue:hover {
@@ -108,9 +122,6 @@ footer {
     background-color: grey;
 }
 
-/*.tooltip-arrow,
-.tooltip > .tooltip-inner {background-color: #f00;}*/
-
 .navbar-inverse {
     /*opacity: 0.4;
     filter: alpha(opacity=40);*/
@@ -123,28 +134,6 @@ footer {
 .carousel .item {
 }
 
-    .carousel .item img {
-        /*min-height: 100%;
-  min-width: 1024px;
-	
-  width: 100%;
-  height: auto;
-	
-  position: fixed;
-  top: 0;
-  left: 0;*/
-    }
-
-#home {
-    /*opacity: 0.4;
-    filter: alpha(opacity=40);*/
-    /*background: url(Images/concert.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;*/
-}
-
 #Charlii-i {
     background-color: #3498db;
     height: 1000px;
@@ -152,11 +141,9 @@ footer {
 
 #news {
     position: absolute;
-    top: 110px;
+    top: 30px;
     left: 45px;
     width: 500px;
-    /*opacity: 0.4;
-    filter: alpha(opacity=40);*/
     background-color: transparent;
     color: white;
     padding-left: 0;
@@ -181,6 +168,7 @@ footer {
 .page{
     /*http://stanhub.com/how-to-make-div-element-100-height-of-browser-window-using-css-only/*/
     min-height: 100vh;
+    padding: 30px;
 }
 
 .page.white {
@@ -189,6 +177,10 @@ footer {
 
 .page.black {
     background-color: black;
+}
+
+.page.grey {
+    background-color: #7f8c8d;
 }
 
 .page.blue {
