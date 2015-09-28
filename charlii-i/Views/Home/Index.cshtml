@@ -2,10 +2,12 @@
     ViewBag.Title = "";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div id="photo-stream" class="carousel slide" data-ride="carousel" data-interval="10000">
+
+<div id="home" class="page black carousel slide" data-ride="carousel" data-interval="10000">
+
     <ol class="carousel-indicators">
-        <li data-target="#photo-stream" data-slide-to="0" class="active"></li>
-        <li data-target="#photo-stream" data-slide-to="1"></li>
+        <li data-target="#home" data-slide-to="0" class="active"></li>
+        <li data-target="#home" data-slide-to="1"></li>
     </ol>
 
     <div class="carousel-inner" role="listbox">
@@ -17,7 +19,13 @@
         </div>
     </div>
 </div>
+
 <div id="news" class="jumbotron">
-    <h2>Hør den nyeste låt</h2>
+    <p>Nu kan du höra den nya låten med Charlii-I <i>"That's who you are"</i></p>
+    <p><a class="btn btn-success btn-lg" href="spotify:track:7gfKW8bViYkc1Lu5lLi9kR" role="button"><span class="glyphicon glyphicon-volume-up"></span> Lyssna på Spotify</a></p>
 </div>
 
+<div id="charlii-i" class="page blue">Charlii-I</div>
+<div id="music" class="page yellow">Musik</div>
+<div id="events" class="page green">Events</div>
+<div id="contact" class="page red">Kontakt</div>

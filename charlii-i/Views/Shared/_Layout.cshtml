@@ -7,49 +7,35 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
+<body data-spy="scroll" data-offset="75">
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            @*<a href="@Url.Action("Index", "Home", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Hem">
-                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                </a>
-                <a href="@Url.Action("Index", "About", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Charlii-i">
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                </a>
-                <a href="@Url.Action("Index", "Music", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Musik">
-                    <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
-                </a>
-                <a href="@Url.Action("Index", "Events", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Events">
-                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                </a>
-                <a href="@Url.Action("Index", "Contact", new {area = ""})" class="navbar-brand" data-toggle="tooltip" data-placement="bottom" title="Kontakt">
-                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-                </a>*@
-
-            @*<a href="@Url.Action("Index", "Home", new {area = ""})" class="navbar-brand">
-                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span> Hem
-                </a>
-                <a href="@Url.Action("Index", "About", new {area = ""})" class="navbar-brand">
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Charlii-i
-                </a>
-                <a href="@Url.Action("Index", "Music", new {area = ""})" class="navbar-brand">
-                    <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Musik
-                </a>
-                <a href="@Url.Action("Index", "Events", new {area = ""})" class="navbar-brand">
-                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Events
-                </a>
-                <a href="@Url.Action("Index", "Contact", new {area = ""})" class="navbar-brand">
-                    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> Kontakt
-                </a>*@
-
-            @Html.ActionLink("Hem", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            @Html.ActionLink("Charlii-i", "Index", "About", new { area = "" }, new { @class = "navbar-brand" })
-            @Html.ActionLink("Musik", "Index", "Music", new { area = "" }, new { @class = "navbar-brand" })
-            @Html.ActionLink("Events", "Index", "Events", new { area = "" }, new { @class = "navbar-brand" })
-            @Html.ActionLink("Kontakt", "Index", "Contact", new { area = "" }, new { @class = "navbar-brand" })
-
+            @*@Html.ActionLink("Hem", "Index", "Home", new {area = ""}, new {@class = "navbar-brand black", data_toggle = "tooltip", data_placement = "bottom", title = "Oversigt og de seneste nyheder"})
+            @Html.ActionLink("Charlii-I", "Index", "About", new {area = ""}, new {@class = "navbar-brand blue", data_toggle = "tooltip", data_placement = "bottom", title = "Personerne bag Charlii-I"})
+            @Html.ActionLink("Musik", "Index", "Music", new {area = ""}, new {@class = "navbar-brand yellow", data_toggle = "tooltip", data_placement = "bottom", title = "Hør musikken"})
+            @Html.ActionLink("Events", "Index", "Events", new {area = ""}, new {@class = "navbar-brand green", data_toggle = "tooltip", data_placement = "bottom", title = "Se hvornår Charlii-I spiller næste gang"})
+            @Html.ActionLink("Kontakt", "Index", "Contact", new {area = ""}, new {@class = "navbar-brand red", data_toggle = "tooltip", data_placement = "bottom", title = "Book Charlii-I"})*@
+            <ul class="nav navbar-nav">
+                <li><a href="#home" class="navbar-brand black" data_toggle="tooltip" data_placement="bottom" title="Oversigt og de seneste nyheder">Hem</a></li>
+                <li><a href="#charlii-i" class="navbar-brand blue" data_toggle="tooltip" data_placement="bottom" title="Personerne bag Charlii-I">Charlii-I</a></li>
+                <li><a href="#music" class="navbar-brand yellow" data_toggle="tooltip" data_placement="bottom" title="Hør musikken">Musik</a></li>
+                <li><a href="#events" class="navbar-brand green" data_toggle="tooltip" data_placement="bottom" title="Se hvornår Charlii-I spiller næste gang">Events</a></li>
+                <li><a href="#contact" class="navbar-brand red" data_toggle="tooltip" data_placement="bottom" title="Book Charlii-I">Kontakt</a></li>
+            </ul>
         </div>
+        <div id="language" class="btn-group">
+            <button type="button" class="btn btn-default">Svenska</button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Dansk</a></li>
+                <li><a href="#">English</a></li>
+            </ul>
+        </div>
+        
     </div>
 </div>
     <div class="container body-content">
