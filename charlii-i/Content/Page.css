@@ -1,0 +1,33 @@
+﻿.page{
+    /*http://stanhub.com/how-to-make-div-element-100-height-of-browser-window-using-css-only/*/
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.page.white {
+    background-color: white;
+}
+
+.page.black {
+    background-color: black;
+}
+
+.page.grey {
+    background-color: #7f8c8d;
+}
+
+.page.blue {
+    background-color: #3498db;
+}
+
+.page.yellow {
+    background-color: #f1c40f;
+}
+
+.page.green {
+    background-color: #16a085;
+}
+
+.page.red {
+    background-color: #e74c3c;
+}

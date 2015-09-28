@@ -1,0 +1,84 @@
+﻿.navbar{
+    padding-left: 30px;
+}
+
+.navbar-brand {
+    padding: 25px 20px;
+}
+
+.navbar > .container .navbar-brand {
+    padding: 25px 20px;
+}
+
+/*https://flatuicolors.com/*/
+.navbar-inverse .navbar-nav > .active > .red,
+.navbar-inverse .navbar-nav > .active > .red:hover, 
+navbar-inverse .navbar-nav > .active > .red:focus,
+.navbar-inverse .navbar-brand.red:hover {
+    color: #e74c3c;
+}
+
+.navbar-inverse .navbar-nav > .active > .blue,
+.navbar-inverse .navbar-nav > .active > .blue:hover,
+.navbar-inverse .navbar-nav > .active > .blue:focus,
+.navbar-inverse .navbar-brand.blue:hover {
+    color: #3498db;
+}
+
+.navbar-inverse .navbar-nav > .active > .green,
+.navbar-inverse .navbar-nav > .active > .green:hover,
+.navbar-inverse .navbar-nav > .active > .green:focus,
+.navbar-inverse .navbar-brand.green:hover {
+    color: #16a085;
+}
+
+.navbar-inverse .navbar-nav > .active > .yellow,
+.navbar-inverse .navbar-nav > .active > .yellow:hover,
+.navbar-inverse .navbar-nav > .active > .yellow:focus,
+.navbar-inverse .navbar-brand.yellow:hover {
+    color: #f1c40f;
+}
+
+.navbar-inverse .navbar-nav > .active > .black,
+.navbar-inverse .navbar-nav > .active > .black:hover,
+.navbar-inverse .navbar-nav > .active > .black:focus,
+.navbar-inverse .navbar-brand.black:hover {
+    color: #000000;
+}
+
+.navbar-inverse .navbar-nav > .active > .grey,
+.navbar-inverse .navbar-nav > .active > .grey:hover,
+.navbar-inverse .navbar-nav > .active > .grey:focus,
+.navbar-inverse .navbar-brand.grey:hover {
+    color: #7f8c8d;
+}
+
+.navbar-inverse .navbar-nav > .active > .white,
+.navbar-inverse .navbar-nav > .active > .white:hover,
+.navbar-inverse .navbar-nav > .active > .white:focus,
+.navbar-inverse .navbar-brand.white:hover {
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus{
+    background-color: #222222;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: black;
+}
+
+.navbar-inverse {
+    /*opacity: 0.4;
+    filter: alpha(opacity=40);*/
+}
