@@ -31,3 +31,28 @@
 .page.red {
     background-color: #e74c3c;
 }
+
+#home{
+    background: url(Images/concert.jpg);
+	background-size: cover;
+    background-position: 0 50px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#home #news {
+    position: absolute;
+    top: 80px;
+    left: 45px;
+    width: 500px;
+    background-color: transparent;
+    color: white;
+    padding-left: 0;
+
+}
+
+#home #news .glyphicon-volume-up {
+    color: black;
+    position: relative;
+    top: 3px;
+}
