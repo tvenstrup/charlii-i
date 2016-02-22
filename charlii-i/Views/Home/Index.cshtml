@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@*<div id="home" class="page black carousel slide" data-ride="carousel" data-interval="10000">
+<div id="home" class="page black carousel slide" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
         <li data-target="#home" data-slide-to="0" class="active"></li>
         <li data-target="#home" data-slide-to="1"></li>
@@ -11,10 +11,14 @@
 
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="~/Content/Images/concert.jpg" alt="" />
+            <img src="~/Content/Images/portrait5.jpg" alt="" />
         </div>
         <div class="item">
-            <img src="~/Content/Images/concert-color.jpg" alt="" />
+            <img src="~/Content/Images/concert.jpg" alt="" />
+            @*<div class="carousel-caption">
+                <h3>In action</h3>
+                <p>Spiller på....</p>
+            </div>*@
         </div>
     </div>
 
@@ -22,16 +26,24 @@
         <p>Nu kan du höra den nya låten med Charlii-I <i>"That's who you are"</i></p>
         <p><a class="btn btn-success btn-lg" href="spotify:track:7gfKW8bViYkc1Lu5lLi9kR" role="button"><span class="glyphicon glyphicon-volume-up"></span> Lyssna på Spotify</a></p>
     </div>
-</div>*@
-<div id="home">
-    <div class="overlay">
-        <div id="news" class="jumbotron">
-            <p>Nu kan du höra den nya låten med Charlii-I <i>"That's who you are"</i></p>
-            <p><a class="btn btn-success btn-lg" href="spotify:track:7gfKW8bViYkc1Lu5lLi9kR" role="button"><span class="glyphicon glyphicon-volume-up"></span> Lyssna på Spotify</a></p>
-        </div>
-    </div>
 </div>
-<div id="charlii-i" class="page blue">Charlii-I</div>
-<div id="music" class="page yellow">Musik</div>
-<div id="events" class="page green">Events</div>
-<div id="contact" class="page red">Kontakt</div>
+
+
+@*TODO: Make transparent*@
+@*<div class="page-break transparent"></div>*@
+<div id="charlii-i" class="page blue"><h2>Charlii-I</h2></div>
+<div id="music" class="page green"><h2>Musik</h2></div>
+<div id="events" class="page yellow"><h2>Events</h2></div>
+<div id="contact" class="page white">
+    <h2>Kontakt</h2>
+    <table>
+        <tr>
+            <td>t:</td>
+            <td>+46 70-532 16 48</td>
+        </tr>
+        <tr>
+            <td>m:</td>
+            <td>gustafssonida@yahoo.se</td>
+        </tr>
+    </table>
+</div>

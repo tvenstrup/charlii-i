@@ -1,6 +1,6 @@
 ﻿body {
     padding-top: 70px;
-    background-color: black;
+    /*background-color: black;*/
 }
 
 .container {
@@ -29,11 +29,15 @@ footer {
     background-color: grey;
 }
 
-.carousel-indicators {
+/*.carousel-indicators {
     top: 60%;
-}
+}*/
 
-.carousel .item {
+.carousel .item img {
+    width:100%;
+    /*max-height: 100vh;*/
+    /*max-height: 100vh;*/
+    /*height: 100vh;*/
 }
 
 .jumbotron {

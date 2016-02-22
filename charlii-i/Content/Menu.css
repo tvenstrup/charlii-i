@@ -82,6 +82,10 @@ navbar-inverse .navbar-nav > .active > .red:focus,
     /*opacity: 0.4;
     filter: alpha(opacity=40);*/
 }
+.navbar-fixed-top, .navbar-fixed-bottom
+{
+    border: none;
+}
 
 .tooltip{
     min-width: 200px;

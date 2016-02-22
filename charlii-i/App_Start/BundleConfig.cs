@@ -24,6 +24,7 @@ namespace charlii_i
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/charlii-i").Include(
+                      "~/Scripts/charlii-i/site.js",
                       "~/Scripts/charlii-i/page-scroll.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(

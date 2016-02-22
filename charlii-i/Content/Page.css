@@ -4,6 +4,10 @@
     padding: 30px;
 }
 
+    .page h2 {
+        margin-top: 0;
+    }
+
 .page.white {
     background-color: white;
 }
@@ -32,17 +36,30 @@
     background-color: #e74c3c;
 }
 
+.page.transparent {
+    background-color: transparent;
+    /*opacity: 0.4;
+    filter: alpha(opacity=40);*/
+
+}
+
+.page-break{
+    min-height: 200px;
+}
+
 #home{
-    background: url(Images/concert.jpg);
-	background-size: cover;
+    /*background: url(Images/concert.jpg);*/
+	/*background-size: cover;
     background-position: 0 50px;
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
+    padding: 0;
+    /*max-height: 300px;*/
 }
 
 #home #news {
     position: absolute;
-    top: 80px;
+    top: 40px;
     left: 45px;
     width: 500px;
     background-color: transparent;
@@ -56,3 +73,12 @@
     position: relative;
     top: 3px;
 }
+
+#contact{
+    height: 170px;
+    min-height: 170px;
+}
+
+    #contact td {
+        padding-right: 5px;
+    }
